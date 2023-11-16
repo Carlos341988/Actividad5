@@ -1,0 +1,14 @@
+{
+    "elements": {},
+    "attributes": {
+        "xmlsn.tx": {
+            "context": "html"
+        },
+        "th:action": {
+            "context": "form"
+        },
+        "xmlsn:th": {
+            "context": "html"
+        }
+    }
+}
