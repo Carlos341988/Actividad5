@@ -56,12 +56,5 @@ public class Controladores {
         return "redirect:/";
     }
     
-    @GetMapping("/confirmDelete/{id}")
-    public String confirmDelete(Model model,@PathVariable String id){
-        Optional<Pelicula> peliculas = service.listarId(Integer.parseInt(id));
-        if(peliculas.isPresent()){
-            model.addAttribute("pelicula", peliculas.get());
-        }
-        return "PeliculaEliminada";      
-    }
+    
 }
