@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "peliculas")
 public class Pelicula {
-    
+    //Generamos la clase con sus atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -17,7 +17,8 @@ public class Pelicula {
     private String genero;
     
     public Pelicula(){}
-
+    
+    // generamos el constructor
     public Pelicula(int id, String nombre, String genero) {
         this.id = id;
         this.nombre = nombre;
